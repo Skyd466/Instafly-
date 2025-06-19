@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaFly - Downloader</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0;">
+
+    <h1>Instagram Downloader</h1>
+    <p>Paste your Instagram video or reel link below:</p>
+
+    <input type="text" id="instaLink" placeholder="Paste Instagram Link Here" style="width: 80%; padding: 10px; margin: 15px 0; border-radius: 5px; border: 1px solid #ccc;">
+    <br>
+    <button onclick="downloadInsta()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Download Now</button>
+
+    <nav style="margin-top: 20px;">
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <footer style="position: absolute; bottom: 10px; width: 100%; text-align: center; font-size: 14px; color: #888;">
+        Created by Akash | Powered by InstaFly
+    </footer>
+
+    <script>
+        function downloadInsta() {
+            var link = document.getElementById('instaLink').value;
+            if (link) {
+                window.open('https://snapinsta.io/?url=' + encodeURIComponent(link), '_blank');
+            } else {
+                alert('Please paste an Instagram link!');
+            }
+        }
+    </script>
+
+</body>
+</html>
