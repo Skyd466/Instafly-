@@ -1,25 +1,369 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InstaFly - Home</title>
+    <title>Trendora - Daily Trending Updates in Sports, Entertainment & Finance</title>
+    <meta name="description" content="Stay updated with the latest trends in Sports, Entertainment, and Finance. Your daily source for trending news and insights.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0;">
-
-    <h1>Welcome to InstaFly</h1>
-    <p>Your fast and easy Instagram downloader tool.</p>
-
-    <nav>
-        <a href="downloader.html">Download Instagram Reels</a> | 
-        <a href="about.html">About</a> | 
-        <a href="contact.html">Contact</a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Trendora</h1>
+                <span class="logo-tagline">Daily Trending Updates</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sports" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#entertainment" class="nav-link">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#finance" class="nav-link">Finance</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
 
-    <footer style="position: absolute; bottom: 10px; width: 100%; text-align: center; font-size: 14px; color: #888;">
-        Created by Akash | Powered by InstaFly
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to <span class="brand-highlight">Trendora</span></h1>
+                <p class="hero-subtitle">Your premium source for daily trending updates across Sports, Entertainment, and Finance</p>
+                <p class="hero-description">Stay ahead of the curve with carefully curated content that matters. Fresh insights, breaking news, and trending stories delivered with sophistication.</p>
+                <a href="#featured" class="cta-button">Explore Latest Trends</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Stories</h2>
+            <div class="featured-grid">
+                <article class="featured-card main-feature">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Featured Sports Story">
+                        <span class="category-tag sports">Sports</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Championship Finals Set New Viewership Records</h3>
+                        <p class="card-excerpt">The latest championship finals drew unprecedented global audiences, marking a new era in sports entertainment and broadcasting...</p>
+                        <div class="card-meta">
+                            <span class="date">Today</span>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="featured-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Entertainment News">
+                        <span class="category-tag entertainment">Entertainment</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Streaming Wars Heat Up</h3>
+                        <p class="card-excerpt">Major platforms announce new exclusive content deals...</p>
+                        <div class="card-meta">
+                            <span class="date">Yesterday</span>
+                            <span class="read-time">2 min read</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="featured-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Finance News">
+                        <span class="category-tag finance">Finance</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Market Trends & Analysis</h3>
+                        <p class="card-excerpt">Key indicators point to shifting market dynamics...</p>
+                        <div class="card-meta">
+                            <span class="date">Yesterday</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section id="sports" class="category-section sports-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-trophy"></i>
+                    Sports
+                </h2>
+                <p class="section-description">Latest updates from the world of sports</p>
+            </div>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Sports Article">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Olympic Preparations Intensify</h3>
+                        <p class="article-excerpt">Athletes around the world are making final preparations as the Olympic Games approach. Training facilities report record usage...</p>
+                        <div class="article-meta">
+                            <span class="date">2 hours ago</span>
+                            <span class="author">By Sports Desk</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Football News">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Transfer Window Updates</h3>
+                        <p class="article-excerpt">Major clubs are actively pursuing top talent as the transfer window reaches its critical phase...</p>
+                        <div class="article-meta">
+                            <span class="date">4 hours ago</span>
+                            <span class="author">By Transfer Expert</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c483d37e84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Basketball News">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Rookie Sensations Rising</h3>
+                        <p class="article-excerpt">This season's rookie class is making waves with exceptional performances and breaking long-standing records...</p>
+                        <div class="article-meta">
+                            <span class="date">6 hours ago</span>
+                            <span class="author">By Basketball Analyst</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entertainment Section -->
+    <section id="entertainment" class="category-section entertainment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-film"></i>
+                    Entertainment
+                </h2>
+                <p class="section-description">Trending stories from entertainment industry</p>
+            </div>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1489599162141-350583cb8d40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Movie News">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Summer Blockbusters Preview</h3>
+                        <p class="article-excerpt">This summer's movie lineup promises spectacular entertainment with highly anticipated releases from major studios...</p>
+                        <div class="article-meta">
+                            <span class="date">1 hour ago</span>
+                            <span class="author">By Film Critic</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Music News">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Music Festival Season</h3>
+                        <p class="article-excerpt">Festival lineups are being announced worldwide, featuring both established artists and emerging talent...</p>
+                        <div class="article-meta">
+                            <span class="date">3 hours ago</span>
+                            <span class="author">By Music Editor</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="TV News">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Streaming Original Series</h3>
+                        <p class="article-excerpt">Platform exclusive series are raising the bar for original content with innovative storytelling and production values...</p>
+                        <div class="article-meta">
+                            <span class="date">5 hours ago</span>
+                            <span class="author">By TV Analyst</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finance Section -->
+    <section id="finance" class="category-section finance-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-line"></i>
+                    Finance
+                </h2>
+                <p class="section-description">Market insights and financial trends</p>
+            </div>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Stock Market">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Market Volatility Analysis</h3>
+                        <p class="article-excerpt">Recent market movements reflect changing investor sentiment amid global economic shifts and policy announcements...</p>
+                        <div class="article-meta">
+                            <span class="date">30 minutes ago</span>
+                            <span class="author">By Market Analyst</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Cryptocurrency">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Cryptocurrency Developments</h3>
+                        <p class="article-excerpt">Digital asset markets continue evolving with new regulatory frameworks and institutional adoption trends...</p>
+                        <div class="article-meta">
+                            <span class="date">2 hours ago</span>
+                            <span class="author">By Crypto Expert</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Business News">
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Economic Policy Updates</h3>
+                        <p class="article-excerpt">Central bank decisions and government policy changes are shaping economic outlook for the coming quarters...</p>
+                        <div class="article-meta">
+                            <span class="date">4 hours ago</span>
+                            <span class="author">By Economics Team</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Trendora</h2>
+                <p class="about-text">
+                    Trendora is your premium destination for daily trending updates across Sports, Entertainment, and Finance. 
+                    We curate the most relevant and impactful stories, delivering them with sophistication and clarity.
+                </p>
+                <p class="about-text">
+                    Our mission is to keep you informed about the trends that matter, providing insightful analysis 
+                    and timely updates that help you stay ahead in today's fast-paced world.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">1000+</h3>
+                        <p class="stat-label">Daily Readers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">3</h3>
+                        <p class="stat-label">Key Categories</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">24/7</h3>
+                        <p class="stat-label">Updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Trendora</h3>
+                    <p>Your daily source for trending updates in Sports, Entertainment, and Finance.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#sports">Sports</a></li>
+                            <li><a href="#entertainment">Entertainment</a></li>
+                            <li><a href="#finance">Finance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trendora. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
